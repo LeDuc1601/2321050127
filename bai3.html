@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <body>
+            <MARQUEE><img src="../bai1/image/pug.jpg" alt=""></MARQUEE>
+            <!--Danh sách có thứ tự-->
+            <p>Danh sách các công việc vòa buổi sáng</p>
+            <ol>
+                <li>Thức dậy</li>
+                <li>Đánh răng</li>
+                <li>Ăn sáng</li>
+                <li>Đi học</li>
+                <li>Giải lao</li>
+            </ol>
+            <!--Danh sách ko có thứ tự-->
+            <p>Các ngôn ngữ lập trình web</p>
+            <ul>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+                <li>C</li>
+            </ul>
+            <h1>Form</h1>
+            <form>
+                <div>
+                   <b>Họ và tên</b>
+                   <input type="text" name="hoten">
+                </div>
+                <div>
+                    <b>Năm: </b>
+                    <input type="text" name="nam" value="2005">
+                </div>
+                <div>
+                    <b>Giới thiệu bản thân</b>
+                    <textarea name="gioithieu">Nhập giới thiệu.....</textarea>
+                </div>
+                <br>
+                <div>
+                    <b>Email:</b><br>
+                    <input type="email" name="email" placeholder="Dạng @gmail.com">
+                </div>
+                <div>
+                    <b>Số điện thoại</b><br>
+                    <input type="tel" name="sdt" placeholder="Nhập số điện thoại"
+                    required pattern="([0]{1}([3,4,9]{1})([0-9]{8}))">
+                </div>
+                 <div>
+                   <b>Giới tính</b><br>
+                   <input type="radio" name="gioitinh" value="Nam"> Nam <br>
+                   <input type="radio" name="gioitinh" value="Nữ"> Nữ <br>
+                 </div>
+                 <div>
+                    <b>Sở thích</b><br>
+                    Game:<input type="checkbox" name="sothich" value="game"> <br>
+                    Du lịch:<input type="checkbox" name="sothich" value="dulich"> <br>
+                    Lọ vương:<input type="checkbox" name="sothich" value="qualo"> <br>
+                 </div>
+                 <br>
+                 <div>
+                    <b>Trình duyệt ưa thích</b><br>
+                    <input list="browsers">
+                    <datalist id="browsers">
+                        <option value="Internet exploder">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Cốc cốc"> 
+                    </datalist>
+                       <br>
+                       
+                     <select name="browsers">
+                        <option value="Internet exploder">Internet exploder
+                        <option value="Firefox">Firefox
+                        <option value="Chrome">Chrome
+                        <option value="Opera">Opera
+                        <option value="Cốc cốc"> Cốc cốc
+                     </select>
+                 
+                 </div>
+                 <div>
+                    <b>Âm Lượng:</b><br>
+                    0 <input type="range" value="20"> 100
+                 </div>
+                 <div>
+                    <b> Tuổi </b><br>
+                    <input type="number" name="tuoi" step="2">
+                 </div>
+                 <div>
+                    <b>Ngày tháng năm sinh</b><br>
+                    <input type="date" name="ngaythangnamsinh">
+                 </div>
+                 <div> 
+                    <b>Màu sắc </b><br>
+                    <input type="color" name="" id="">
+                 </div>
+                   <div>
+                    <b> Chọn ảnh đại diện</b><br>
+                    <input type="file">
+                 </div>
+                 <div>
+                    <b>Mật khẩu</b><br>
+                    <input type="password">
+                 </div>
+                 <div>
+                   <input type="submit">
+                </div>
+            </form>
+            <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/h6db1gYLNlE?si=CCykgW4FYWao0vaq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-orgin" allowfullscreen></iframe>
+            <video controls width="560" height="315">
+                 <source src="bua.mp4" type="video/mp4">
+            </video>
+            <audio controls>
+                <source src="BauTroiMoi.mp3" type="audio/mp3">
+            </audio>
+         
+
+        </body>
+    </head>
+</html>
