@@ -1,0 +1,10 @@
+h3{color:rgb(226, 219, 84)}
+#title{background-color: blueviolet;}
+.bg{background-color: rgb(168, 101, 101);}
+.box1{background-color: aqua;}
+.box2{background-color: bisque;
+     /* margin: 50px 30px 100px 10px;*/
+     width: 50%;
+     margin: auto;
+}
+.box3{background-color: rgb(165, 158, 158);}
