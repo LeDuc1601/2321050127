@@ -24,8 +24,9 @@ ul{
     color:gray;
 } 
 .logo{
-    height:40px;
-    background-color: red;
+    height:80px;
+    background-color: white;
+    text-decoration: none;
 }
 main{
     display:flex;
@@ -35,8 +36,7 @@ main{
     border-radius: 10px;
 }
 .noidung-phai{
-    height:1000px;
-    background-color:bisque;
+    background-color:white;
     width:20%;
 }
 .tieude{
@@ -55,4 +55,92 @@ main{
     height:200px;
     background-color: grey;
     width:360px;
+    margin:5px;
+}
+.dangnhap{
+    background-color: #2fa4e7;
+    padding:20px;
+    color:white;
+    font-size: large;
+    font-weight: bold;
+    border-radius:10px 10px 0px 0px;
+}
+.nhapmsv{
+    padding:20px;
+    display:flex;
+}
+.nhapmatkhau{
+    display:flex;
+    padding:20px;
+}
+.xacnhan{
+    display:flex;
+    padding:20px;
+}
+.thongbao{
+    width: 80%;
+    text-decoration: none;
+}
+.noidung-thongbao{
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    width:80%;
+    text-decoration: none;
+}
+.thongbao-trai{
+    width:40%;
+    background-color:white;
+    text-decoration: none;
+}
+.thongbao-phai{
+    width:70%;
+    background-color:white;
+    text-decoration: none;
+    padding: 10px;
+}
+.caidat{
+    background-color: #2fa4e7;
+    width:17%;  
+    padding:20px;
+    color:white;
+    font-size: large;
+    font-weight: bold;
+    border-radius:10px 10px 0px 0px;
+    margin:5px;
+}
+.anh{
+    background-color: white;
+    width:250px;
+    height:250px;
+}
+.huongdan{
+    background-color: #2fa4e7;
+    width:80%;  
+    padding:20px;
+    color:white;
+    font-size: large;
+    font-weight: bold;
+    border-radius:10px 10px 0px 0px;
+    margin:10px;
+}
+.lienket{
+    color:rgb(103, 89, 89);
+    text-decoration: none;
+    font-size: larger;
+}
+.baiviet-thongbao{
+    text-decoration: none;
+    font-family: Arial;
+    color:black;
+    list-style: none;
+    font-size: medium;
+}
+.footer-noidung{
+    background-color: #2fa4e7;
+    height:100px;
+    color:white;
+    font-family: Arial;
+    font-size: small;
+    text-align: center;
 }
