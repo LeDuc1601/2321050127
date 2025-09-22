@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai javascript</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        document.writeln("Hello World!" + "<br>");
+        //để khai báo biến trên JS dùng let hoặc var
+        //cú pháp: let tên biến = giá trị
+        //để nối chuỗi JS dùng dấu +
+        let hoten="Le Duc" + "<br>";
+
+        document.writeln(hoten);
+
+        let sothunhat=10;
+        let sothuhai=2;
+        let ketqua=0;
+
+        ketqua = sothunhat / sothuhai;
+        ketqua++
+        document.writeln(++ketqua);
+
+        sothunhat += sothuhai;
+        document.writeln(sothunhat);
+
+        document.writeln(sothunhat!==sothuhai +"<br>");
+
+        let thongtinsinhvien = {
+            hoten: "Le Duc",
+            MSV:"2321050127",
+            gioitinh: true,
+            tuoi:20,
+            lop:DCCTCT68A,
+        }
+
+        let diachisinhvien ={
+            thanhpho:"Ha Noi",
+            phuong:"Nghia Do",
+            duong:"Tran Cung",
+            sonha:"24",
+        }
+
+        thongtinsinhvien.diachi=diachisinhvien;
+
+        document.writeln("Xin chao"+" "+ thongtinsinhvien.hoten+" "+ thongtinsinhvien.tuoi +"tuoi"+"Nha o"+" "+thongtinsinhvien.diachi.thanhpho);
+
+        let namnay=2025;
+        document.writeln("ban"+thongtinsinhvien.hoten + "sinh nam" + (namnay - thongtinsinhvien.tuoi));
+    </script>
+</body>
+</html>

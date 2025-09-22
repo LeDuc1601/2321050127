@@ -1,0 +1,71 @@
+body{
+    background-color:whitesmoke;
+}
+
+main{
+    background-color: whitesmoke;
+}
+
+.noidung{
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    margin: auto;
+    background-color: green;
+}
+
+.noidung-trai{
+    font-size: medium;
+    color: blue;
+}
+
+.anh{
+    justify-content: space-between;
+    display: flex;
+    width: 50%;
+}
+
+.noidung-phai{
+    background-color: black;
+    height: 400px;
+    width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align:center;
+}
+.dangnhap {
+    border-bottom: 2px solid grey;
+    height: 220px;
+}
+.nut{
+    background-color: blue;
+    color:white;
+    text-align: center;
+    padding: 15px;
+    width: 370px;
+    border-radius: 10px;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+a{
+    color: blue;
+    margin: center;
+}
+.khac{
+    background-color:white;
+    margin-top: 20px;
+}
+.but{
+    background-color: greenyellow;
+    color: white;
+    text-align: center;
+    width: 80px;
+    height: 60px;
+    border-radius: 10px;
+    margin: center;
+}
+input{
+    width:100%;
+    height: 40px;
+    border-radius: 10px;
+}
