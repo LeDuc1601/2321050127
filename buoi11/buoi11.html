@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let thongtindonhang={
+            Madonhang:"a123",
+            thongtinkhachhang:{
+                hoten:"thang nu",
+                SDT:"1111111111",
+                trangthaithanhvienthanthiet:true,
+            },
+            danhsachsanpham:{
+                sp1:{
+                    masanpham:"1",
+                    tensanpham:"ca phe",
+                    soluong:100,
+                    giatien:2000000,
+                },
+                sp2:{
+                    masanpham:"2",
+                    tensanpham:"mat cha",
+                    soluong:1,
+                    giatien:1000000000,
+                },
+                sp3:{
+                    masanpham:"3",
+                    tensanpham:"tra sua",
+                    soluong:200,
+                    giatien:10000000,
+                }
+            },
+            thanhtoanthanhcong:true,
+            diachigiaohang:"nha tong thong"
+        }
+
+        let tongSP1 = thongtindonhang.danhsachsanpham.sp1.giatien * thongtindonhang.danhsachsanpham.sp1.soluong;
+        let tongSP2 = thongtindonhang.danhsachsanpham.sp2.giatien * thongtindonhang.danhsachsanpham.sp2.soluong;
+        let tongSP3 = thongtindonhang.danhsachsanpham.sp3.giatien * thongtindonhang.danhsachsanpham.sp3.soluong;
+
+        let tongTien = tongSP1 + tongSP2 + tongSP3;
+
+        document.writeln("Tong tien don hang = " + tongTien + "<br>");
+
+        document.writeln("do dai cua ma don hang" + thongtindonhang.Madonhang.length + "<br>");
+
+        var myString="Hello em";
+        document.writeln(myString[3]);
+
+        document.writeln(myString.slice(0,2));
+
+        document.writeln(myString.replace("Hello", "He he he") + "<br>");
+
+        document.writeln(myString.toUpperCase()+"<br>");
+
+        document.writeln(myString.indexOf('e')+"<br>");
+
+        document.writeln(myString.includes('e')+"<br>");
+
+        document.writeln(myString.split('l')+"<br>");
+
+        let DanhSach=[
+            "A","B","C","D"
+        ]
+        document.writeln(DanhSach[1]);
+        document.writeln(DanhSach[0].startsWith("A"));
+
+        let so="123";
+        document.writeln(typeof(so)+"<br>");
+
+        var pi=3.14159;
+        document.writeln(pi.toFixed(2));
+
+        let today= new Date('2023-09-23');
+        document.writeln(today.getDay());
+        document.writeln(today.getMilliseconds());
+        document.writeln(today.getMinutes());
+    </script>
+</body>
+</html>
