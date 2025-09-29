@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4,5,'a','b','c'];
+        document.writeln(arr.length+"<br>");
+
+        document.writeln(arr[3]+"<br>");
+        //chi ra vi tri dau tien xuat hien gia tri nhap
+        document.writeln(arr.indexOf(4)+"<br>");
+        //nhu tren nhung vi tri cuoi cung
+        document.writeln(arr.lastIndexOf(5)+"<br>");
+        //kiem tra bien co phai mang ko
+        document.writeln(Array.isArray(arr)+"<br>");
+
+        //noi cac mang
+        let i,j,k,l;
+        i=[1,2,3];
+        j="javascript";
+        k=[42,'script'];
+        l=i.concat(j,k);
+        //xoa phan tu cuoi
+        o=l.pop();
+        //them mot phan tu vao vi tri cuoi
+        l.push("hehehe");
+        l[3]=4;
+        document.writeln(l+"<br>");
+        //bien mang thanh ky tu phan cach
+        document.writeln(l.join(" ")+"<br>");
+
+        document.writeln(Array.isArray(l.join(" "))+"<br>");
+
+        document.writeln(o +"<br>");
+
+        document.writeln(l+"<br>");
+        //dao lai cac phan tu trong mang
+        document.writeln(l.reverse() +"<br>");
+        //shift():xoa phan tu dau tien
+        //unshift():them phan tu vao dau hang
+
+        //if-else
+        let today= new Date();
+        let now = today.getHours();
+        if(now<10){
+            document.writeln("Chao buoi sang"+"<br>");
+        }else {if(now<17 && now>=10){
+            document.writeln("hello noon"+"<br>");
+        }else{if(now>=17 && now<22){
+            document.writeln("hello evening"+"<br>");
+        }else{
+            document.writeln("hello night"+"<br>");
+        }}}
+
+
+        let so="100000000000000001";
+        document.writeln(so[so.length-1]);
+        let socuoicung=parseInt(so[so.length-1]);
+        if(socuoicung % 2==0){
+            document.writeln("So chan");
+        }else{
+            document.writeln("So le");
+        }
+    </script>
+</body>
+</html>
