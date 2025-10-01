@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today= new Date();
+        let theday=today.getDay;
+        switch(theday){
+            //kiem tra co phai thu 6 ko
+            case 5:
+                document.writeln("Friday"+"<br>");
+                break;
+            case 6:
+                document.writeln("Saturday"+"<br>");
+                break;
+            case 0:
+                document.writeln("Sunday"+"<br>");
+                break;
+            default:
+                document.writeln("Im looking forward to this weekend!"+"<br>");
+        }
+
+        let arr=[1,2,3,4,5,6];
+
+        // for(let i=1;i<=1000;i++){
+        //     document.writeln(i+"Anh xin loi!<br>")
+        // }
+
+        for(let j=0;j<arr.length;j++){
+            document.writeln(arr[j]+"<br>");
+        }
+
+        let danhSach = ["Lương Ngọc	Bích ", "Dương Gia Bình ", "Nguyễn Như Thành	Danh ", "Hoàng Xuân	Duẩn ", "Hà Văn	Dũng"];
+        for(let a=0;a<danhSach.length;a++){
+            document.writeln("Xin chao ban" + " " + danhSach[a] + "<br>");
+        }
+
+        let b=0;
+        while(b<=10){
+            document.writeln("the number is"+b+"<br>")
+            b=b+1;
+        }
+
+        //alert("xin chao ban");
+
+        // let result=prompt("press button");
+        // if(result==true){
+        //     document.writeln("press ok");
+        // }else{
+        //     document.writeln("press cancel");
+        // }
+
+        //function + ten ham+(){
+        //       code logic
+        // }
+        function sayLo(){
+            document.writeln("Lo");
+        }
+
+        sayLo();
+
+        function sayHi(name,age){
+            document.writeln("Hi"+" "+ name +" "+age+"tuoi"+"<br>");
+        }
+
+        let nameP=prompt("ten","dien ten");
+        let ageP=prompt("tuoi","dien tuoi");
+        sayHi(nameP,ageP);
+
+        //kiem tra chan le dung prompt va function
+
+        let so=prompt("So","Dien So");
+
+        function kt(){
+            let socuoicung=parseInt(so[so.length-1]);
+        if(socuoicung % 2==0){
+            document.writeln(so +" " + "la so chan"+"<br>");
+        }else{
+            document.writeln(so +" " + "la so le"+"<br>");
+        }
+        }
+
+        if(isNaN(so)==true){
+            document.writeln("Nhap sai"+"<br>");
+        }else{
+            so=parseFloat(so);
+            kt();
+        }
+        
+    </script>
+</body>
+</html>
