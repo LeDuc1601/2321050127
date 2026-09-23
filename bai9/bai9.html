@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bai9.js"></script>
+</head>
+<body>
+    <script>
+        // in ra man hinh
+        document.writeln("Hello World!<br>");
+
+        var name="D<br>";
+
+        document.writeln(name);
+
+        name = "K<br>";
+        document.writeln(name);
+
+        var year=2026;
+        document.writeln(year);
+
+        //Phep cong
+        var sothunhat=10;
+
+        var sothuhai=5;
+
+        var ketqua=0;
+
+        document.writeln("<br>Ket qua phep cong = ")
+        ketqua=sothunhat+sothuhai;
+        document.writeln(ketqua);
+        //tru
+        document.writeln("<br>Ket qua phep tru = ")
+        ketqua=sothunhat-sothuhai;
+        document.writeln(ketqua);
+        //nhan
+        document.writeln("<br>Ket qua phep nhan = ")
+        ketqua=sothunhat*sothuhai;
+        document.writeln(ketqua);
+        //chia
+        document.writeln("<br>Ket qua phep chia = ")
+        ketqua=sothunhat/sothuhai;
+        document.writeln(ketqua);
+         //chia %
+        document.writeln("<br>Ket qua phep chia = ")
+        ketqua=sothunhat%sothuhai;
+        document.writeln(ketqua);
+
+        //++
+        document.writeln("<br>");
+        document.writeln(++sothunhat);
+        //--
+        document.writeln("<br>");
+        document.writeln(--sothunhat);
+
+        sothunhat +=sothuhai;
+        document.writeln(sothunhat);
+
+        sothunhat -=sothuhai;
+        document.writeln(sothunhat);
+
+        var ho="le";
+        document.writeln("<br>"+ ho +" "+ name);
+
+        document.writeln(ho.length);
+        document.writeln(typeof(ho));
+
+        var hovaten="nguyen van tuat";
+        document.writeln(hovaten.indexOf("tuat"));
+
+        document.writeln(hovaten.includes("tuat"));
+
+        document.writeln(hovaten.startsWith("n"));
+
+        document.writeln(hovaten.replace("nguyen van","thang con"));
+
+        document.writeln("<br>");
+        document.writeln(hovaten.toLocaleUpperCase());
+
+        document.writeln("<br>");
+        document.writeln(hovaten.toLocaleLowerCase());
+    </script>
+</body>
+</html>
