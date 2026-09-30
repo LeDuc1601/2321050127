@@ -81,6 +81,110 @@
 
         document.writeln("<br>");
         document.writeln(hovaten.toLocaleLowerCase());
+
+        //date
+        var homnay= new Date();
+        document.writeln("<br>"+homnay);
+
+        var ngay= new Date("9/30/2025");
+        document.writeln("<br>"+ngay);
+
+        var namnay=homnay.getFullYear();
+        document.writeln("<br>"+namnay);
+
+        var thangnay=homnay.getMonth()+1;
+        document.writeln("<br>"+thangnay);
+
+        var thunay=homnay.getDay()+1;
+        document.writeln("<br>"+thunay);
+
+        var ngaynay=homnay.getDate();
+        document.writeln("<br>"+ngaynay);
+
+        document.writeln("<br>");
+        document.writeln("thu"+" "+thunay+" "+"ngay"+" "+ngaynay+" "+"thang"+" "+ thangnay+" "+"nam"+" "+namnay);
+
+        var mang=[1,2,3,4,5];
+        document.writeln("<br>"+mang[2]);
+        document.writeln("<br>"+mang.length);
+
+        var mangten=["duc","hoang","hung"];
+        document.writeln("<br>"+mangten[0]);
+
+        var d=mang.concat(mang,mangten);
+        document.writeln("<br>");
+        document.writeln(d.join("-"));
+
+        var d=mang.concat(mang,mangten);
+        document.writeln("<br>");
+        document.writeln(d.pop());//lay phan tu cuoi trong mang
+
+        var d=mang.concat(mang,mangten);
+        document.writeln("<br>");
+        d.push("tuat");
+        document.writeln(d);
+
+        document.writeln("<br>");
+        document.writeln(d.reverse());//dao mang
+
+        var thongtinsinhvien={
+            ten:"le van tuat",
+            namsinh:2005,
+            quequan:{
+                thanhpho:"Thanh Hoa",
+                phuong:"concho"
+            }
+        };
+        document.writeln("<br>"+thongtinsinhvien.ten);
+        document.writeln("<br>"+thongtinsinhvien.quequan.thanhpho);
+        tuoi=namnay-thongtinsinhvien.namsinh;
+        thongtinsinhvien.tuoi=tuoi;
+        // console.log(thongtinsinhvien);
+        thongtinsinhvien.gioitinh=true;
+
+        var danhsach=[
+            {
+                ten:"le van tuat",
+                namsinh:2005,
+                quequan:{
+                    thanhpho:"Thanh Hoa",
+                    phuong:"concho"
+                }
+            },
+            {
+                ten:"le van tuat",
+                namsinh:2005,
+                quequan:{
+                    thanhpho:"Thanh Hoa",
+                    phuong:"concho"
+                }
+            },
+        ];
+        console.log(danhsach);
+
+        var so1=10;
+        var so2="10";
+        document.writeln("<br>");
+        document.writeln(so1===so2);//so sanh ca gia tri va kieu du lieu
+        document.writeln("<br>");
+
+        //cau dieu kien
+        if(thunay > 6){
+            document.writeln("duoc nghi");
+        }else{if(thunay=6){
+            document.writeln("sap dc nghi")
+            }else{
+            document.writeln("di hoc");
+            }
+        }
+        document.writeln("<br>");
+        var so=5;
+        if(so%2==0){
+            document.writeln("la so chan");
+        }else{
+            document.writeln("la so le");
+        }
+
     </script>
 </body>
 </html>
