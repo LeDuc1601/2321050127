@@ -177,13 +177,83 @@
             document.writeln("di hoc");
             }
         }
+        // document.writeln("<br>");
+        // var so=5;
+        // if(so%2==0){
+        //     document.writeln("la so chan");
+        // }else{
+        //     document.writeln("la so le");
+        // }
+
         document.writeln("<br>");
-        var so=5;
-        if(so%2==0){
-            document.writeln("la so chan");
+        var so=1000000000000000001;
+        var dodai=so.length;
+        var socuoi=so[dodai-1];
+        document.writeln(socuoi);
+        if(socuoi%2==0)
+        {
+            document.writeln("so chan");
         }else{
-            document.writeln("la so le");
+            document.writeln("so le");
         }
+        document.writeln("<br>");
+        switch(thunay){
+            case 5:
+                document.write("finally friday");
+                break;
+            case 6:
+                document.write("super saturday");
+                break;
+            case 0:
+                document.write("sleepy sunday");
+                break;
+            default:
+                document.write("im looking forwark this weekend");
+        }
+
+        // document.writeln("<br>");
+        // for(var index=1;index<=1000;index++){
+        //     document.writeln("<br>");
+        //     document.writeln("hehehe");
+        // }
+        document.writeln("<br>");
+        for(var i=0;i<d.length;i++){
+            if(isNaN(d[i])==false){
+                document.writeln("<br>");
+               document.writeln(d[i]); 
+            }else{
+            document.writeln("<br>");
+            document.writeln("helo"+" "+d[i]);}
+        }
+
+        document.writeln("<br>");
+        i=0;
+        while(i<=10){
+            document.write("the number is"+" "+i);
+            document.writeln("<br>");
+            i=i+1;
+        }
+
+        var j=0;
+        do{
+            document.writeln("<br>");
+            document.writeln("the number is"+" "+j);
+            j=j+1;
+        }while(j<=10)
+
+
+        alert("hello");
+        document.writeln("<br>");
+        var a=confirm("ban co muon nap tien de dang ky tai khoan")
+        if(a==true){
+            document.write("you press OK");
+        }else{
+            document.write("you press cancel");
+        }
+
+        document.writeln("<br>");
+        var r=prompt("nhap ho ten","nhap ten o day");
+        document.write(r);
 
     </script>
 </body>

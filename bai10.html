@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayhello(){
+            document.writeln("Hello");
+        }
+
+        sayhello();
+
+        function chao(ten){
+            document.writeln("<br>  Xin chao"+" "+ ten)
+        }
+
+        chao("tuat");
+
+        function tong(so1,so2){
+            if(isNaN(so1)==false && isNaN(so2)==false)
+            {
+                document.write("<br>");
+                document.write(so1+so2);
+            }
+        }
+        var so1=prompt("nhap so bat ky",);
+        var so2=prompt("nhap so bat ky",);
+
+        tong(so1,so2);
+
+        //viet ham tinh diem chu tren 3 dau diem A B C
+        //tong = a*0.6+b*0.3+c*0.1 diem chu tuong ung
+    </script>
+</body>
+</html>
