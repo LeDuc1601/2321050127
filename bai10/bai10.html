@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        nhap diem A: <input id="diema" type="number">
+    </div>
+    <div>
+        nhap diem B: <input id="diemb" type="number">
+    </div>
+    <div>
+        nhap diem C: <input id="diemc" type="number">
+    </div>
+    <div>
+        <button onclick="tinhDiem()">tinh diem</button>
+    </div>
+    <div>
+        ket qua: <input id="diemchu" type="text">
+    </div>
+    <script>
+        // function sayhello(){
+        //     document.writeln("Hello");
+        // }
+
+        // sayhello();
+
+        // function chao(ten){
+        //     document.writeln("<br>  Xin chao"+" "+ ten)
+        // }
+
+        // chao("tuat");
+
+        // function tong(so1,so2){
+        //     if(isNaN(so1)==false && isNaN(so2)==false)
+        //     {
+        //         document.write("<br>");
+        //         document.write(so1+so2);
+        //     }
+        // }
+        // var so1=prompt("nhap so bat ky",);
+        // var so2=prompt("nhap so bat ky",);
+
+        // tong(so1,so2);
+
+        //viet ham tinh diem chu tren 3 dau diem A B C
+        //tong = a*0.6+b*0.3+c*0.1 diem chu tuong ung
+
+        // parseInt(1) = 1
+        // parseInt(1.1)=1
+        // parseFloat(1.1)=1.1
+
+       
+        function tinhDiem(){
+            var a=parseFloat(document.getElementById("diema").value);
+            var b=parseFloat(document.getElementById("diemb").value);
+            var c=parseFloat(document.getElementById("diemc").value);
+            document.getElementById("diemchu").value=tinhdiem(a,b,c);
+        }
+        function tinhdiem(a,b,c){
+            var tong=(a*0.6)+(b*0.3)+(c*0.1);
+            var kq="";
+            if(tong < 4){
+                kq="F";
+            }
+            else if(tong > 4 && tong < 5){
+                kq="D";
+            }else if(tong >= 5 && tong < 7){
+                kq="C";
+            }else if(tong >= 7 && tong < 9){
+                kq="B";
+            }else if(tong >= 9 && tong <= 10){
+                kq="A";
+            }
+               return kq;
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var diemA = Number(prompt("Điểm A", "Nhập điểm A"));
+        var diemB = Number(prompt("Điểm B", "Nhập điểm B"));
+        var diemC = Number(prompt("Điểm C", "Nhập điểm C"));
+            function tinhDiem(diemA, diemB, diemC){
+                if(!isNaN(diemA) && !isNaN(diemB) && !isNaN(diemC)){
+                    if(diemA<=10 && diemA>=0){
+                        if(diemB<=10 && diemB>=0){
+                            if(diemC<=10 && diemC>=0){
+                                document.write("<br>");
+                                return(((diemA)*0.6) + ((diemB)*0.3) + ((diemC)*0.1)).toFixed(2);
+                            }
+    
+                        }
+                    }else{
+                                 return "Vui lòng nhập hai số hợp lệ!";
+                    }
+                } else{
+                     return "Vui lòng nhập hai số hợp lệ!";
+            }
+        }
+        document.writeln("<br>");
+        document.writeln("Điểm hệ 10 là: " +tinhDiem(diemA, diemB, diemC));
+    </script>
+</body>
+</html>

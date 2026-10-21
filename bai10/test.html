@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        nhap nam sinh: <input id="nam" type="number">
+    </div>    
+    <div>
+        <button onclick="tinhTuoi()">tinh</button>
+    </div>
+    <div>
+        ket qua: <input id="Tuoi" type="number">
+    </div>
+    <script>
+        
+    
+        function tinhTuoi(){
+            var namsinh=parseInt(document.getElementById("nam").value);
+            document.getElementById("Tuoi").value=tinh(tuoi);
+        }
+        function tinh(tuoi){
+            var a=new Date();
+            var b=a.getFullYear();
+            tuoi=parseInt(b)-namsinh;
+            
+            return tuoi;
+        }
+
+    
+
+    </script>
+</body>
+</html>
