@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 20%;
+        }
+        
+        .khung{
+            padding: 0 0 0 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="khung">
+        <h1 class="chedo">che do sang</h1>
+        <img class="anh" src="mattroi.png">
+        <div class="chucnang">
+            <Button onclick="doichedo()">doi</Button>
+        </div>
+    </div>
+    <script>
+        var chedo=true;
+        function doichedo(){
+            if(chedo==true){
+                document.getElementsByTagName("body")[0].style="background-color: black";
+                document.getElementsByClassName("chedo")[0].style="color:white";
+                document.getElementsByClassName("chedo")[0].innerHTML="che do toi";
+                document.getElementsByClassName("anh")[0].src="mattrang.png";
+                chedo=false;
+            }else{
+                document.getElementsByTagName("body")[0].style="background-color: white";
+                document.getElementsByClassName("chedo")[0].style="color:black";
+                document.getElementsByClassName("chedo")[0].innerHTML="che do sang";
+                document.getElementsByClassName("anh")[0].src="mattroi.png";
+                chedo=true;
+            }
+        }
+    </script>
+</body>
+</html>

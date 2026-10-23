@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="all">
+        <h2>VD ve che do</h2>
+        <div class="anh">
+            <img src="../image1/1.png" alt="">
+        </div>
+        <h2>Che do: Sang</h2>
+        <div>
+            <button onclick="doichedo()">Doi che do</button>
+        </div>
+    </div>
+    <script>
+        let chedo=true;
+        function doichedo(){
+            if(chedo==true){
+            document.getElementsByTagName('body')[0].style='background-color:black';
+            document.getElementsByTagName('h2')[1].innerHTML='Che do: Toi';
+            document.getElementsByTagName('h2')[0].style= 'color:white';
+            document.getElementsByTagName('h2')[1].style='color:white';
+            document.getElementsByTagName('img')[0].src='../buoi15/anh.jpg';
+            chedo=false;
+        }
+        else{
+            document.getElementsByTagName('body')[0].style='background-color:white';
+            document.getElementsByTagName('h2')[1].innerHTML='Che do: Sang';
+            document.getElementsByTagName('h2')[0].style= 'color:black';
+            document.getElementsByTagName('h2')[1].style='color:black';
+            document.getElementsByTagName('img')[0].src='../image1/1.png';
+            chedo=true;
+        }
+    } 
+    </script>
+</body>
+</html>
