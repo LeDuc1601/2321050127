@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .video{
+            width:50%;
+            height:500px;
+            margin:Auto;
+            background-color: antiquewhite;
+        }
+
+        .danh-sach{
+            width:80%;
+            display:flex;
+            margin: 100px auto;
+            justify-content: space-between;
+        }
+
+        .anh{
+            width:20%;
+            height:100px; 
+        }
+        img{
+            width:100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- màn xem -->
+     <div class="video">
+        <iframe class="" width="100%" height="500px"  src="https://www.youtube.com/embed/OuNo8Tkb3lI?si=bAExUI65U_MdnaY5" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <h1 class="tieu-de">Đường tôi chở em về</h1>
+    </div>
+
+     </div> 
+
+     <div class="danh-sach">
+        <div class="anh" onclick="chonVid(2)">
+            <img src="./img/coco.jpg" alt="">
+            <p>Coco</p>
+        </div>
+        
+        <div class="anh" onclick="chonVid(3)">
+            <img src="./img/car.jpg" alt="">
+            <p>Car</p>
+        </div>
+
+        <div class="anh" onclick="chonVid(4)">
+            <img src="./img/elemental.jpg" alt="">
+            <p>Elemental</p>
+        </div>
+
+        <div class="anh" onclick="chonVid(5)">
+            <img src="./img/minions.jpg" alt="">
+            <p>Minions</p>
+        </div>
+     </div>
+     <script>
+        var danhSachVid = [
+            {
+                id : 1,
+                ten:"Đường tôi chở em về",
+                duongDanAnh:"./img/insideout.jpg",
+                duongDanYtb:"https://www.youtube.com/embed/OuNo8Tkb3lI?si=bAExUI65U_MdnaY5"
+            },
+
+            {
+                id : 2,
+                ten : "Coco",
+                duongDanAnh:"./img/coco.jpg",
+                duongDanYtb:"https://www.youtube.com/embed/xlnPHQ3TLX8?si=fh_zMwaPCrgMczQJ"
+            },
+
+            {
+                id : 3,
+                ten : "Car",
+                duongDanAnh:"./img/car.jpg",
+                duongDanYtb:"https://www.youtube.com/embed/XszNWHhpaTc?si=ML61qON7a7Qht1Fq"
+            },
+
+            {
+                id : 4,
+                ten : "Elemental",
+                duongDanAnh:"./img/elemental.jpg",
+                duongDanYtb:"https://www.youtube.com/embed/hXzcyx9V0xw?si=Lt8nilbNcF7i-6Wu"
+            },
+
+            {
+                id : 5,
+                ten : "Minions",
+                duongDanAnh:"./img/minions.jpg",
+                duongDanYtb:"https://www.youtube.com/embed/S1dnnQsY0QU?si=E-GahMCqVtts7r0P"
+            },
+        ];
+
+        function chonVid(id){
+            for (let i = 0; i < danhSachVid.length; i++){
+                if(danhSachVid[i].id == id ){
+                    document.getElementsByClassName("tieu-de")[0].innerHTML = danhSachVid[i].ten;
+                    document.getElementsByTagName("iframe")[0].src = danhSachVid[i].duongDanYtb;
+                }
+            }
+        }
+     </script>
+</body>
+</html>

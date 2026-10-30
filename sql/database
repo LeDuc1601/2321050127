@@ -1,0 +1,46 @@
+    CREATE DATABASE IF NOT EXISTS netflix;
+    
+    CREATE TABLE nguoi_dung (
+        id int AUTO_INCREMENT PRIMARY KEY ,
+        ten_dang_nhap varchar(30) NOT NULL,
+        mat_khau varchar(30) NOT NULL,
+        email varchar(30) NOT NULL,
+        ho_ten varchar(50) NOT NULL,
+        ngay_sinh date NOT NULL,
+        so_dien_thoai varchar(10) NOT NULL,
+        gioi_tinh boolean  NOT NULL
+    );
+
+    CREATE TABLE IF NOT EXISTS the_loai(
+        id int AUTO_INCREMENT PRIMARY KEY,
+        ten_the_loai varchar(100)
+        );
+    CREATE TABLE IF NOT EXISTS dien_vien(
+        id int AUTO_INCREMENT PRIMARY KEY,
+        ho_ten varchar(30),
+        ngay_sinh date
+        );
+    CREATE TABLE IF NOT EXISTS phim(
+        id int AUTO_INCREMENT PRIMARY KEY,
+        ten_phim varchar(250),
+        quoc_gia varchar(100),
+        dao_dien_id int,
+        nam datetime,
+        do_tuoi int,
+        mo_ta varchar(255)
+        );
+    CREATE TABLE IF NOT EXISTS phim_the_loai(
+        id int PRIMARY KEY,
+        phim_id int,
+        the_loai_id int
+        );
+    CREATE TABLE IF NOT EXISTS phim_dien_vien(
+        id int PRIMARY KEY,
+        phim_id int,
+        dien_vien_id int
+    );
+    CREATE TABLE IF NOT EXISTS dao_dien(
+    id int AUTO_INCREMENT PRIMARY KEY,
+    ho_ten varchar(30),
+    ngay_sinh date
+    );
