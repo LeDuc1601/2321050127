@@ -1,33 +1,68 @@
-<?php
-    //session
-    session_start();
-    $_SESSION['Name'] = "user";
-    
-    echo "Session Name:". $_SESSION['Name'];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+            gap:10px;
+            background-color:blue;
+            padding:20px;
+        }
 
-    //cookie
-    // cookieName: Tên cookie	Tên định danh của cookie (ví dụ: "user", "theme").  
-    // sẽ dùng tên này để gọi lại cookie bằng lệnh $_COOKIE[$cookieName].
-    // $cookieValue: Giá trị cookie	Nội dung dữ liệu  muốn lưu trữ (ví dụ: "JohnDoe", "dark_mode").
-    //  Giá trị này được lưu dưới dạng chuỗi (string).
-    //  time() + 86400:	Thời gian hết hạn. Xác định thời điểm cookie tự động xóa. 
-    // time() lấy thời gian hiện tại tính bằng giây, cộng thêm 86400 giây (tương đương 24 giờ hoặc 1 ngày). 
-    // Nếu không đặt tham số này, cookie sẽ mất ngay khi đóng trình duyệt.
-    // "/":	Đường dẫn áp dụng	Đường dẫn trên máy chủ mà cookie có hiệu lực. 
-    // Dấu gạch chéo / nghĩa là cookie này sẽ có tác dụng trên toàn bộ trang web (tất cả các thư mục và trang con).
-    
-    echo "<br>";
+        a{
+            text-decoration:none;
+            color:white;
+        }
 
-    $cookieName = "user";
-    $cookieValue = "Kien";
+    </style>
 
-    setcookie($cookieName,$cookieValue,time()+86400,"/");
-    if(isset($_COOKIE[$cookieName])){
-        echo "cookie da ton tai";
-    }else{
-        echo "cookie chua dc thiet lap";
-    }
+</head>
+<body>
 
-    
+    <?php
+        session_start();
+        if(isset($_SESSION['dangnhap'])){
+            header("location: index.php" && $_SESSION['dangnhap']=="thanhcong");
+        }
+        include 'connect.php';
+    ?>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.php?page_layout=trangchu">Trang Chu</a></li>
+                <li><a href="index.php?page_layout=taikhoan">Tai Khoan</a></li>
+                <li><a href="index.php?page_layout=danhmuc">Danh Muc</a></li>
+                <li><a href="index.php?page_layout=phim">Phim</a></li>
+            </ul>
+        </nav>
+    </header>
 
-?>
+    <?php
+        // echo $_GET['page_layout'];
+        if(isset($_GET['page_layout'])){
+            $page= $_GET['page_layout'];
+            switch($page){
+                case'trangchu';
+                    include 'trangchu.php';
+                    break;
+                case'taikhoan';
+                    include 'taikhoan.php';
+                    break;
+                case'danhmuc';
+                    include 'danhmuc.php';
+                    break;
+                case'phim';
+                    include 'phim.php';
+                    break;
+                case'themtaikhoan';
+                    include 'themtaikhoan.php';
+                    break;
+            }
+        }
+    ?>
+</body>
+</html>

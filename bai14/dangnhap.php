@@ -51,14 +51,21 @@
     </div>
 
     <?php
-            
+
+        include 'connect.php'; 
+
         if(isset($_POST['tenDangNhap']) && isset($_POST['matKhau']) ){
             $tenDangNhap = $_POST['tenDangNhap'];
             $matKhau = $_POST['matKhau'];
-            if($tenDangNhap == "admin" && $matKhau == "123"){
+
+            $sql="SELECT * from nguoi_dung where ten_dang_nhap = '$tenDangNhap' and mat_khau = '$matKhau' ";
+
+            $result = mysqli_query($conn,$sql);
+
+            if(mysqli_num_rows($result) > 0){
                 session_start();
                 $_SESSION['dangnhap']="thanh cong";
-                header("location: trangchu.php");
+                header("location: index.php");
             }
             else{
                 echo "ten dang nhap hoac mat khau khong chinh xac";
