@@ -16,6 +16,14 @@
             padding:10px;
         
         }
+        .capnhat{
+            background-color:green;
+            border-radius:5px;
+        }
+        .xoa{
+            background-color:red;
+            border-radius:5px;
+        }
     </style>
 </head>
 <body>
@@ -37,6 +45,7 @@
             <th>Ngay sinh</th>
             <th>SDT</th>
             <th>Gioi tinh</th>
+            <th>Chuc nang</th>
         </tr>
         <?php
             while($row= mysqli_fetch_array($result)){
@@ -48,7 +57,11 @@
             <td><?php echo $row['ho_ten']?></td>
             <td><?php echo $row['ngay_sinh']?></td>
             <td><?php echo $row['sdt']?></td>
-            <td><?php echo $row['gioi_tinh']?></td>
+            <td><?php echo $row['gioi_tinh']==true?"Nam":"Nu" ?></td>
+            <td>
+                <a class="capnhat" href= "index.php?page_layout=capnhattaikhoan&id=<?php echo $row['id']?>" >Cap nhat</a>
+                <a class="xoa" href= "index.php?page_layout=xoataikhoan&id=<?php echo $row['id']?>" >Xoa</a>
+            </td>
         </tr>
         <?php
             }

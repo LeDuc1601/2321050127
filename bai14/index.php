@@ -61,6 +61,12 @@
                 case'themtaikhoan';
                     include 'themtaikhoan.php';
                     break;
+                case'capnhattaikhoan';
+                    include 'capnhat.php';
+                    break;
+                case'xoataikhoan';
+                    include 'xoa.php';
+                    break;
             }
         }
     ?>
