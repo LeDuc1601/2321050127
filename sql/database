@@ -44,3 +44,16 @@
     ho_ten varchar(30),
     ngay_sinh date
     );
+    SELECT phim.ten_phim,
+		phim_the_loai.id_phim,
+        the_loai.ten_the_loai,
+        phim.quoc_gia,
+        phim.nam_san_xuat,
+        dao_dien.ho_ten
+FROM phim
+JOIN phim_the_loai
+ON phim_the_loai.id_phim=phim.id_phim
+JOIN the_loai
+ON phim_the_loai.id_the_loai=the_loai.id_the_loai
+JOIN dao_dien
+ON phim.dao_dien_id=dao_dien.id_dao_dien

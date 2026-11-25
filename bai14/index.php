@@ -67,6 +67,28 @@
                 case'xoataikhoan';
                     include 'xoa.php';
                     break;
+                case'xoataikhoan';
+                    include 'xoa.php';
+                    break;
+                case'xoaphim';
+                    include 'xoaphim.php';
+                    break;
+                case'themphim';
+                    include 'themphim.php';
+                    break;
+                case'capnhatphim';
+                    include 'capnhatphim.php';
+                    break;
+                case'themtheloai';
+                    include 'themtheloai.php';
+                    break;
+                case'xoatheloai';
+                    include 'xoatheloai.php';
+                    break;
+                case'capnhattheloai';
+                    include 'capnhattheloai.php';
+                    break;
+
             }
         }
     ?>

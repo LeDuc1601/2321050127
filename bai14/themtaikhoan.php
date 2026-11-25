@@ -74,8 +74,8 @@
             <input type="text" name="soDienThoai" id="thong-tin" placeholder="So Dien Thoai">
         </div>
         <div class="gt">
-            <input type="radio" name="gioiTinh" id="gioi-tinh" value="1" <?php echo $nguoidung['gioi_tinh']==true?"checked":""?>>Nam
-            <input type="radio" name="gioiTinh" id="gioi-tinh" value="0" <?php echo $nguoidung['gioi_tinh']==false?"checked":""?>>Nữ
+            <input type="radio" name="gioiTinh" id="gioi-tinh" value="1" >Nam
+            <input type="radio" name="gioiTinh" id="gioi-tinh" value="0" >Nữ
         </div>
         <div class="button">
             <button>Thêm</button>
